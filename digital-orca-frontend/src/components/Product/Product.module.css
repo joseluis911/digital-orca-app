@@ -1,0 +1,36 @@
+.Product{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Product > div{
+    margin: 20px;
+  }
+  .Product__Description > p{
+    text-align:left ;
+  }
+  .Price{
+    color: #ffd369;
+  }
+  
+  @media(max-width: 426px){
+    img{
+      height: 120px;
+    }
+    .Product{
+      flex-flow: column;
+      border-bottom: 1px solid #fff;
+      margin-top: 15px;
+    }
+    .Product > div{
+      margin: 0px;
+  
+    }
+    .Product__Description > p{
+      line-height: normal;
+    }
+    .Price{
+      margin-bottom: 10px;
+    }
+  }
